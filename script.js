@@ -23,9 +23,9 @@ const images = document.querySelectorAll('.image');
     const target = event.target;
 
     // Ensure the drop target is a valid image element
-    if (target.classList.contains('image')) {
+    if (target.classList.contains("image")) {
       // Swap background images
-      const temp = target.style.backgroundImage;
+      let temp = target.style.backgroundImage;
       target.style.backgroundImage = draggedImage.style.backgroundImage;
       draggedImage.style.backgroundImage = temp;
     }
